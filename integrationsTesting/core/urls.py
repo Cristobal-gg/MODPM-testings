@@ -1,5 +1,5 @@
 """
-URL configuration for integrationsTesting project.
+URL configuration for core project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -16,8 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework import routers
+from testings.views import BookViewSet
+
+router = routers.DefaultRouter()
+router.register(r'books', BookViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('testings/', include("testings.urls")),
+    path('api/', include(router.urls)),
 ]
