@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres_example',
+        'USER': 'postgres',
+        'PASSWORD': 'asdf123',
+        'HOST': 'localhost',  # o la IP de tu contenedor Docker
+        'PORT': '5432',
     }
 }
 
