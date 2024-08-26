@@ -1,4 +1,5 @@
-#README
+#README v1.0
+
 Proyecto para pruebas de testing ocupando DJANGO
 
 Para levantar proyecto BACK-END DJANGO:
@@ -12,6 +13,6 @@ Para levantar proyecto BACK-END DJANGO:
 
 Para levantar proyecto FRONT-END REACT.JS:
 2) En consola escribir:
-    - Navegar a .\integrationsTesing\clienteMODPM\
+    - Navegar a .\integrationsTesting\clienteMODPM\
     - Instalar dependencias proyecto Reactjs: npm install
-    - Levantar proyecto: npm rundev
+    - Levantar proyecto: npm run dev

@@ -28,5 +28,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('testings/', include("testings.urls")),
     path('api/', include(router.urls)),
-    path('docs/', include_docs_urls(title='API Documentation'))
+    path('docs/', include_docs_urls(title='API Documentation')),
 ]

@@ -10,13 +10,16 @@ export function Navigation() {
                     </Link>
                 </li>
                 <li>
+                    <Link to="/maps">Maps</Link>
+                </li>
+                <li>
                     <Link to="/testings">Testing</Link>
                 </li>
                 <li>
-                    <Link to="/maps">Maps</Link>
+                    <Link to="/testingsForm">Testing Form</Link>
                 </li>
-                <li> 
-                    <Link to="/login">Login</Link>
+                <li>
+                    <Link to="/prueba">prueba</Link>
                 </li>
             </ul>
         </nav>
